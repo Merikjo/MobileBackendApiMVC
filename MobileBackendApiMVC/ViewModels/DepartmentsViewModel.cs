@@ -1,0 +1,23 @@
+﻿using MobileBackendApiMVC.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace MobileBackendApiMVC.ViewModels
+{
+    public class DepartmentsViewModel
+    {
+        public int Id_Department { get; set; }
+        public string DepartmentName { get; set; }
+        public int? Id_Employee { get; set; }
+        public int? Id_PinCode { get; set; }
+
+        public string PinCode { get; set; }
+        public string PinCodes { get; set; }
+
+
+
+        public virtual Employees Employees { get; set; }
+    }
+}
